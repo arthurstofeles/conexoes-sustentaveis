@@ -36,12 +36,12 @@ export default {
   }
   img {
     height: 700px;
-    @media screen and (max-width: 768px) {
-    max-width: 72%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
+    @media screen and (max-width: 1200px) {
+      max-width: 72%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
   }
   .call-to-action {
     padding: 32px;
@@ -60,7 +60,7 @@ export default {
       font-size: 24px;
       font-weight: 500;
       line-height: normal;
-            @media screen and (max-width: 768px) {
+      @media screen and (max-width: 768px) {
         font-size: 16px;
       }
     }
