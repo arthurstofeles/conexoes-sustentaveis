@@ -5,6 +5,7 @@
     <FuncionaHome />
     <BlogHome />
     <QuemSomosHome />
+    <FooterHome />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import BannerHome from "../components/home/BannerHome";
 import FuncionaHome from "../components/home/FuncionaHome";
 import BlogHome from "../components/home/BlogHome";
 import QuemSomosHome from "../components/home/QuemSomosHome";
+import FooterHome from "../components/home/FooterHome";
 export default {
   name: "HomeView",
   data: () => ({}),
@@ -22,7 +24,8 @@ export default {
     BannerHome,
     FuncionaHome,
     BlogHome,
-    QuemSomosHome
+    QuemSomosHome,
+    FooterHome
   },
 };
 </script>
@@ -31,5 +34,6 @@ export default {
 .home {
   scroll-behavior: smooth;
   background-color: #E2EDE6;
+  padding-bottom: 32px;
 }
 </style>
