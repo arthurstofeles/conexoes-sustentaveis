@@ -4,6 +4,7 @@
     <BannerHome />
     <FuncionaHome />
     <BlogHome />
+    <QuemSomosHome />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import HeaderLayout from "../layouts/HeaderLayout";
 import BannerHome from "../components/home/BannerHome";
 import FuncionaHome from "../components/home/FuncionaHome";
 import BlogHome from "../components/home/BlogHome";
+import QuemSomosHome from "../components/home/QuemSomosHome";
 export default {
   name: "HomeView",
   data: () => ({}),
@@ -19,7 +21,8 @@ export default {
     HeaderLayout,
     BannerHome,
     FuncionaHome,
-    BlogHome
+    BlogHome,
+    QuemSomosHome
   },
 };
 </script>
