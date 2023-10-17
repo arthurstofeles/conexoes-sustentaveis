@@ -15,6 +15,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "LoginView" */ "../views/LoginView.vue"),
   },
+  {
+    path: "/recuperar-senha",
+    name: "RecuperarSenhaView",
+    component: () =>
+      import(/* webpackChunkName: "RecuperarSenhaView" */ "../views/RecuperarSenhaView.vue"),
+  },
 ];
 
 const router = new VueRouter({

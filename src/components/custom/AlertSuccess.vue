@@ -10,8 +10,8 @@
       <v-card-actions class="d-flex justify-center">
         <v-btn
           rounded
-          class="enviar se_green_light--text px-8"
-          color="hy_green"
+          class="px-8"
+          color="32C56D"
           @click="$emit('close')"
           >{{ dialogTextButton }}</v-btn
         >
