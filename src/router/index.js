@@ -10,6 +10,12 @@ const routes = [
       import(/* webpackChunkName: "HomeView" */ "@/views/HomeView.vue"),
   },
   {
+    path: "/admin",
+    name: "DefaultLayout",
+    component: () =>
+      import(/* webpackChunkName: "DefaultLayout" */ "../layouts/DefaultLayout.vue"),
+  },
+  {
     path: "/login",
     name: "LoginView",
     component: () =>
