@@ -3,6 +3,7 @@
     <HeaderLayout />
     <BannerHome />
     <FuncionaHome />
+    <BlogHome />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import HeaderLayout from "../layouts/HeaderLayout";
 import BannerHome from "../components/home/BannerHome";
 import FuncionaHome from "../components/home/FuncionaHome";
+import BlogHome from "../components/home/BlogHome";
 export default {
   name: "HomeView",
   data: () => ({}),
   components: {
     HeaderLayout,
     BannerHome,
-    FuncionaHome
+    FuncionaHome,
+    BlogHome
   },
 };
 </script>
