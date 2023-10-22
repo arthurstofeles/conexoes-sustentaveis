@@ -1,53 +1,40 @@
 <template>
-  <v-container fluid class="login fill-height">
-    <v-row align="center" justify="center">
-      <v-col cols="12" lg="4" md="6" sm="8">
-        <v-card class="pa-4">
-          <v-card-title> Login </v-card-title>
-          <v-form ref="form" v-model="valid" lazy-validation class="pa-4">
-            <v-text-field
-              v-model="form.email"
-              :rules="rules.emailRules"
-              label="E-mail"
-              required
-              outlined
-              placeholder="Insira seu em-mail"
-              :error-messages="error ? messageError : formError.email"
-              :validate-on-blur="true"
-              @blur="formError.email = null"
-              :error="error"
-              color="#32C56D"
-            ></v-text-field>
-            <v-text-field
-              v-model="form.password"
-              required
-              outlined
-              placeholder="Digite sua senha"
-              label="Senha"
-              :rules="rules.passwordRules"
-              :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
-              :type="showPassword ? 'text' : 'password'"
-              @click:append="showPassword = !showPassword"
-              :error-messages="error ? messageError : formError.password"
-              :validate-on-blur="true"
-              @blur="formError.password = null"
-              :error="error"
-              color="#32C56D"
-            ></v-text-field>
-            <v-btn
-              :disabled="loading"
-              :loading="loading"
-              color="#32C56D"
-              class="mr-4 black--text"
-              rounded
-              block
-              @click="login"
-            >
-              Entrar
-            </v-btn>
-          </v-form>
-        </v-card>
-        <p class="text-center pa-4">
+  <div class="login">
+    <div class="pa-4 form">
+      <img src="@/assets/logo-branca.png" alt="logo" />
+      <v-form ref="form" v-model="valid" lazy-validation class="pa-4">
+        <v-text-field
+          class="pb-6"
+          v-model="form.email"
+          :rules="rules.emailRules"
+          label="E-mail"
+          required
+          placeholder="Insira seu em-mail"
+          :error-messages="error ? messageError : formError.email"
+          :validate-on-blur="true"
+          @blur="formError.email = null"
+          :error="error"
+          dark
+          color="#32C56D"
+        ></v-text-field>
+        <v-text-field
+          class="pb-6"
+          v-model="form.password"
+          required
+          dark
+          placeholder="Digite sua senha"
+          label="Senha"
+          :rules="rules.passwordRules"
+          :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
+          :type="showPassword ? 'text' : 'password'"
+          @click:append="showPassword = !showPassword"
+          :error-messages="error ? messageError : formError.password"
+          :validate-on-blur="true"
+          @blur="formError.password = null"
+          :error="error"
+          color="#32C56D"
+        ></v-text-field>
+        <p class="pb-6">
           <router-link
             to="/recuperar-senha"
             color="#32C56D"
@@ -55,10 +42,22 @@
             >Esqueceu a senha?</router-link
           >
         </p>
-      </v-col>
-      <AlertError :alertError="alertError" :messageError="messageError" />
-    </v-row>
-  </v-container>
+        <v-btn
+          :disabled="loading"
+          :loading="loading"
+          color="#32C56D"
+          class="mr-4 black--text"
+          rounded
+          block
+          @click="login"
+        >
+          Entrar
+        </v-btn>
+      </v-form>
+    </div>
+    <div class="bg"></div>
+    <AlertError :alertError="alertError" :messageError="messageError" />
+  </div>
 </template>
 
 <script>
@@ -101,6 +100,32 @@ export default {
 </script>
 <style lang="scss" scoped>
 .login {
-  background-color: #E2EDE6;
+  display: grid;
+  grid-template-columns: 500px auto;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+  .form {
+    height: 100vh;
+    background-color: #262827;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    form {
+      width: 100%;
+    }
+  }
+  .bg {
+    background-image: url("@/assets/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
 }
 </style>
