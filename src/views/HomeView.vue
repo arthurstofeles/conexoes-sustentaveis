@@ -1,10 +1,10 @@
 <template>
   <div class="home">
-    <HeaderLayout />
-    <BannerHome />
-    <FuncionaHome />
-    <BlogHome />
-    <QuemSomosHome />
+    <HeaderLayout  />
+    <BannerHome id="inicio" />
+    <FuncionaHome id="como-funciona" />
+    <BlogHome id="blog" />
+    <QuemSomosHome id="quem-somos" />
     <FooterHome />
   </div>
 </template>

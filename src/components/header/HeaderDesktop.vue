@@ -15,6 +15,15 @@
               >{{ link.title }}</a
             >
           </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/86860086/admin/feed/posts/ "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <v-icon large color="black"> mdi-linkedin </v-icon></a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -76,7 +85,7 @@ export default {
           color: #000;
           transition: 0.3s;
           &:hover {
-            color: #32C56D;
+            color: #32c56d;
             cursor: pointer;
           }
         }

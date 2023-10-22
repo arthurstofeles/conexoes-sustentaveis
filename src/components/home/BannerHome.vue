@@ -4,13 +4,12 @@
       <img src="@/assets/conexoes.png" />
     </div>
     <div class="call-to-action">
-      <h1>Sustentabilidade não se faz sozinho.</h1>
+      <h1>Sustentabilidade se faz no coletivo</h1>
       <h3>
-        Cras quis gravida leo. Vivamus eu cursus risus. Sed vehicula
-        sollicitudin eros, pretium luctus
+        Aqui a gente troca ideias e acha soluções para a vida em sociedade, com menos desigualdades e mais respeito ao meio ambiente.
       </h3>
       <v-btn x-large rounded class="black--text mt-6 px-10" color="#32C56D"
-        >Ir para plataforma EVO</v-btn
+        >Inscreva-se aqui</v-btn
       >
     </div>
   </div>

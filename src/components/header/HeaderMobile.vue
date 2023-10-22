@@ -37,6 +37,15 @@
               >{{ link.title }}</a
             >
           </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/86860086/admin/feed/posts/ "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <v-icon large color="black"> mdi-linkedin </v-icon></a
+            >
+          </li>
         </ul>
         <v-icon
           @click="

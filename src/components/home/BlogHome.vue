@@ -3,11 +3,10 @@
     <div>
       <h2>Blog</h2>
       <h3>
-        Cras quis gravida leo. Vivamus eu cursus risus. Sed vehicula
-        sollicitudin eros, pretium luctus
+        Veja aqui as novidades e ações da nossa comunidade sustentável.
       </h3>
       <v-btn x-large rounded class="black--text mt-6 px-10" color="#32C56D"
-        >Visitar Blog</v-btn
+        >Participar</v-btn
       >
     </div>
     <img src="@/assets/blog-img.png" />

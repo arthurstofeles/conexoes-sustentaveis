@@ -5,22 +5,22 @@
       <div class="steep">
         <div class="number">1</div>
         <div class="text">
-          Cadastre-se na plataforma AEVO (link), e preencha o formulário de
-          autodiagnose.
+          Cadastre-se na <a href="#" target="_blanl">plataforma</a>, e preencha
+          o formulário de autodiagnose.
         </div>
       </div>
       <div class="steep">
         <div class="number">2</div>
         <div class="text">
           Agora que sabemos um pouco mais sobre você, é uma boa hora para
-          cadastrar suas ideias / iniciativas. (opcional)
+          cadastrar suas ideias / iniciativas.
         </div>
       </div>
       <div class="steep">
         <div class="number">3</div>
         <div class="text">
-          Nossa inteligência artificial cruza os dados para conectar as pessoas
-          certas das ideias certas.
+          Nossa Inteligência HUMANIZADA - “Conexões por Todos” cruza os dados
+          para conectar as pessoas certas das ideias certas.
         </div>
       </div>
       <div class="steep">
@@ -54,9 +54,9 @@ export default {
     font-weight: 600;
     padding-left: 32px;
     padding-bottom: 86px;
-          @media screen and (max-width: 768px) {
-        font-size: 32px;
-      }
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+    }
   }
   .steeps {
     background-color: #e2ede6;
@@ -68,7 +68,7 @@ export default {
       grid-template-columns: repeat(2, 1fr);
       gap: 64px;
     }
-        @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       grid-template-columns: repeat(1, 1fr);
       gap: 64px;
     }
@@ -102,9 +102,9 @@ export default {
         border-top: 8px solid #262827;
         border-bottom: 8px solid #262827;
         height: 100%;
-                    @media screen and (max-width: 768px) {
-        font-size: 16px;
-      }
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+        }
       }
     }
   }

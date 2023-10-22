@@ -1,7 +1,8 @@
 <template>
   <div class="footer">
     Uma Startup da
-    <img src="@/assets/eletrobas.png" alt="" />
+    <img width="150" src="@/assets/olimpiada.png" alt="" />
+    <img width="150" src="@/assets/eletrobas.png" alt="" />
   </div>
 </template>
 
@@ -21,8 +22,11 @@ export default {
   margin-top: 64px;
   color: #fff;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   gap: 16px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 </style>
