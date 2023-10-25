@@ -3,6 +3,7 @@
     <HeaderLayout  />
     <BannerHome id="inicio" />
     <FuncionaHome id="como-funciona" />
+    <GapsHome id="gap" />
     <BlogHome id="blog" />
     <QuemSomosHome id="quem-somos" />
     <FooterHome />
@@ -16,6 +17,7 @@ import FuncionaHome from "../components/home/FuncionaHome";
 import BlogHome from "../components/home/BlogHome";
 import QuemSomosHome from "../components/home/QuemSomosHome";
 import FooterHome from "../components/home/FooterHome";
+import GapsHome from "../components/home/GapsHome";
 export default {
   name: "HomeView",
   data: () => ({}),
@@ -25,7 +27,8 @@ export default {
     FuncionaHome,
     BlogHome,
     QuemSomosHome,
-    FooterHome
+    FooterHome,
+    GapsHome
   },
 };
 </script>

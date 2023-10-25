@@ -5,8 +5,8 @@
       <h3>
         Veja aqui as novidades e ações da nossa comunidade sustentável.
       </h3>
-      <v-btn x-large rounded class="black--text mt-6 px-10" color="#32C56D"
-        >Participar</v-btn
+      <v-btn x-large rounded disabled class="black--text mt-6 px-10" dark color="#32C56D"
+        >Em breve</v-btn
       >
     </div>
     <img src="@/assets/blog-img.png" />
@@ -27,7 +27,7 @@ export default {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 64px;
   padding: 32px;
   gap: 32px;
   background: rgb(38, 40, 39);

@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    Uma Startup da
+    Uma endotartup da
     <img width="150" src="@/assets/olimpiada.png" alt="" />
     <img width="150" src="@/assets/eletrobas.png" alt="" />
   </div>

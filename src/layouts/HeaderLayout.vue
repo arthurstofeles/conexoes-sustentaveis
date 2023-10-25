@@ -30,6 +30,10 @@ export default {
         title: "Como Funciona",
         ancor: "#como-funciona",
       },
+            {
+        title: "Gaps da Sustentabilidade",
+        ancor: "#gap",
+      },
       {
         title: "Blog",
         ancor: "#blog",

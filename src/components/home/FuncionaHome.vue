@@ -5,7 +5,7 @@
       <div class="steep">
         <div class="number">1</div>
         <div class="text">
-          Cadastre-se na <a href="#" target="_blanl">plataforma</a>, e preencha
+          Cadastre-se na <a href="https://furnastemp.aevoinnovate.net/" target="_blank">plataforma</a>, e preencha
           o formulário de autodiagnose.
         </div>
       </div>

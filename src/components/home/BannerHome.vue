@@ -8,7 +8,7 @@
       <h3>
         Aqui a gente troca ideias e acha soluções para a vida em sociedade, com menos desigualdades e mais respeito ao meio ambiente.
       </h3>
-      <v-btn x-large rounded class="black--text mt-6 px-10" color="#32C56D"
+      <v-btn x-large rounded class="black--text mt-6 px-10" color="#32C56D" href="https://furnastemp.aevoinnovate.net/" target="_blank"
         >Inscreva-se aqui</v-btn
       >
     </div>
