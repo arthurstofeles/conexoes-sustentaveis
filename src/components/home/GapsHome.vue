@@ -38,6 +38,13 @@
             socioambientais;
           </h3>
         </div>
+        <div>
+          <v-icon x-large color="#32c56d"> mdi-leaf-circle-outline </v-icon>
+          <h3>
+            Pouca confiança nas informações produzidas pelas empresas em geral
+            (greenwashing)
+          </h3>
+        </div>
       </div>
     </div>
   </div>
@@ -72,7 +79,7 @@ export default {
       display: grid;
       gap: 16px;
       grid-template-columns: repeat(4, 1fr);
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 998px) {
         grid-template-columns: repeat(2, 1fr);
       }
       @media screen and (max-width: 600px) {

@@ -1,8 +1,8 @@
 <template>
   <div class="footer">
     Uma endotartup da
-    <img width="150" src="@/assets/olimpiada.png" alt="" />
-    <img width="150" src="@/assets/eletrobas.png" alt="" />
+    <img width="300" src="@/assets/olimpiada.png" alt="" />
+    <img width="300" src="@/assets/eletrobas.png" alt="" />
   </div>
 </template>
 

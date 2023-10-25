@@ -28,21 +28,19 @@ export default {
   align-items: flex-start;
   justify-content: center;
   margin-top: 64px;
+  margin-bottom: 64px;
   padding: 32px;
   gap: 32px;
   background: rgb(38, 40, 39);
-  background: linear-gradient(
-    180deg,
-    rgba(38, 40, 39, 1) 0%,
-    rgba(38, 40, 39, 1) 70%,
-    rgba(226, 237, 230, 1) 70%,
-    rgba(226, 237, 230, 1) 100%
-  );
   @media screen and (max-width: 998px) {
     flex-direction: column;
   }
   div {
     padding-top: 64px;
+    width: 50%;
+    @media screen and (max-width: 998px) {
+        width: 100%;
+      }
     h2 {
       color: #32c56d;
       font-size: 64px;
@@ -65,8 +63,8 @@ export default {
   }
 
   img {
-    max-width: 656px;
-    @media screen and (max-width: 1200px) {
+    max-width: 50%;
+    @media screen and (max-width: 998px) {
       max-width: 100%;
       height: auto;
       margin: 0 auto;
