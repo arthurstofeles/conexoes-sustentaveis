@@ -5,7 +5,7 @@
       <v-form ref="form" v-model="valid" lazy-validation class="pa-4">
         <v-text-field
           class="pb-6"
-          v-model="form.email"
+          v-model="form.username"
           :rules="rules.emailRules"
           label="E-mail"
           required
@@ -34,14 +34,14 @@
           :error="error"
           color="#32C56D"
         ></v-text-field>
-        <p class="pb-6">
+        <!-- <p class="pb-6">
           <router-link
             to="/recuperar-senha"
             color="#32C56D"
             class="text-decoration-none"
             >Esqueceu a senha?</router-link
           >
-        </p>
+        </p> -->
         <v-btn
           :disabled="loading"
           :loading="loading"
@@ -49,7 +49,7 @@
           class="mr-4 black--text"
           rounded
           block
-          @click="login"
+          @click="logar"
         >
           Entrar
         </v-btn>
@@ -61,6 +61,7 @@
 </template>
 
 <script>
+import { login } from "@/utils/services.js";
 import AlertError from "../components/custom/AlertError.vue";
 import { rules } from "@/utils/rules";
 export default {
@@ -70,13 +71,13 @@ export default {
     valid: true,
     error: false,
     form: {
-      email: "",
+      username: "",
       password: "",
     },
     showPassword: false,
     loading: false,
     alertError: false,
-    messageError: "",
+    messageError: "Ocorreu um erro inesperado.",
     formError: {},
   }),
 
@@ -84,8 +85,21 @@ export default {
     validate() {
       this.$refs.form.validate();
     },
-    async login() {
+    async logar() {
       this.loading = true;
+      this.error = false;
+      try {
+        await login(this.form).then((resp) => {
+          this.loading = false;
+          this.$router.push({ path: "/admin" });
+          window.localStorage.token = `token ${resp.token}`;
+          this.$store.dispatch("setLoggedIn", "logado");
+        });
+      } catch (err) {
+        this.alertError = true;
+        this.loading = false;
+        console.error(err);
+      }
     },
   },
   computed: {

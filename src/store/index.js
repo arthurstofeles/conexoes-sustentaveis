@@ -1,34 +1,33 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import VueCookies from "vue-cookies";
 
 Vue.use(Vuex);
+Vue.use(VueCookies);
 
 export default new Vuex.Store({
   state: {
-    form: {},
-    simulador: false,
-    calc: {},
+    loggedIn:
+      Vue.$cookies.get("loggedIn") != undefined
+        ? Vue.$cookies.get("loggedIn")
+        : "deslogado",
+    thanks: false,
   },
   mutations: {
-    SET_FORM(state, payload) {
-      state.form = payload;
+    SET_LOOGEDIN(state, payload) {
+      (state.loggedIn = payload), Vue.$cookies.set("loggedIn", state.loggedIn);
     },
-    SET_SIMULADOR(state, payload) {
-      state.simulador = payload;
-    },
-    SET_CALC(state, payload) {
-      state.calc = payload;
+    SET_THANKS(state, payload) {
+      state.thanks = payload;
     },
   },
   actions: {
-    setForm(context, payload) {
-      context.commit("SET_FORM", payload);
+    setLoggedIn(context, payload) {
+      context.commit("SET_LOOGEDIN", payload);
     },
-    setSimulador(context, payload) {
-      context.commit("SET_SIMULADOR", payload);
-    },
-    setCalc(context, payload) {
-      context.commit("SET_CALC", payload);
-    },
+    setThanks(context, payload) {
+      context.commit("SET_THANKS", payload);
+    }
   },
+  modules: {},
 });

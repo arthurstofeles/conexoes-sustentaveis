@@ -5,6 +5,7 @@
       dark
       width="400"
       height="100%"
+      permanent
     >
       <img src="@/assets/logo-branca.png" alt="" />
 
@@ -49,7 +50,7 @@
       <v-btn text> sair </v-btn>
     </v-navigation-drawer>
     <v-container fluid class="pa-4">
-      <!-- <router-view /> -->
+      <router-view />
     </v-container>
   </div>
 </template>
@@ -57,7 +58,7 @@
 <script>
 export default {
   name: "DefaultLayout",
-  data() {},
+   data: () => ({})
 };
 </script>
 <style lang="scss" scoped>
