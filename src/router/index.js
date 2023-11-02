@@ -14,6 +14,20 @@ const routes = [
     name: "DefaultLayout",
     component: () =>
       import(/* webpackChunkName: "DefaultLayout" */ "../layouts/DefaultLayout.vue"),
+      children: [
+        {
+          path: "/",
+          name: 'IdeiaListView',
+          component: () =>
+            import(/* webpackChunkName: "IdeiaListView" */ "@/views/IdeiaListView.vue"),
+        },
+        {
+          path: "ideia/:id",
+          name: 'IdeiaDetailView',
+          component: () =>
+            import(/* webpackChunkName: "IdeiaDetailView" */ "@/views/IdeiaDetailView.vue"),
+        }
+      ]
   },
   {
     path: "/login",
@@ -21,12 +35,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "LoginView" */ "../views/LoginView.vue"),
   },
-  {
-    path: "/recuperar-senha",
-    name: "RecuperarSenhaView",
-    component: () =>
-      import(/* webpackChunkName: "RecuperarSenhaView" */ "../views/RecuperarSenhaView.vue"),
-  },
+  // {
+  //   path: "/recuperar-senha",
+  //   name: "RecuperarSenhaView",
+  //   component: () =>
+  //     import(/* webpackChunkName: "RecuperarSenhaView" */ "../views/RecuperarSenhaView.vue"),
+  // },
 ];
 
 const router = new VueRouter({

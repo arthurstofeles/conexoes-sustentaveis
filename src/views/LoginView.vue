@@ -80,7 +80,11 @@ export default {
     messageError: "Ocorreu um erro inesperado.",
     formError: {},
   }),
-
+  beforeCreate() {
+    if (this.$store.state.loggedIn === "logado") {
+      this.$router.push({ path: "/admin" });
+    }
+  },
   methods: {
     validate() {
       this.$refs.form.validate();

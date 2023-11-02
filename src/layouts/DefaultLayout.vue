@@ -10,21 +10,21 @@
       <img src="@/assets/logo-branca.png" alt="" />
 
       <v-list>
-        <v-list-item :to="{ path: '/' }" color="dark">
-          <v-list-item-icon>
-            <v-icon>mdi-account-group</v-icon>
-          </v-list-item-icon>
-          <v-list-item-content>
-            <v-list-item-title>Lista de usuários</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item color="dark">
+        <v-list-item :to="{ path: '/admin' }" color="dark">
           <v-list-item-icon>
             <v-icon>mdi-lightbulb-on</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title>Lista de ideias</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item color="dark">
+          <v-list-item-icon>
+            <v-icon>mdi-account-group</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>Lista de usuários</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -47,9 +47,9 @@
         </v-list-item>
       </v-list>
 
-      <v-btn text> sair </v-btn>
+      <v-btn text @click="logout"> sair </v-btn>
     </v-navigation-drawer>
-    <v-container fluid class="pa-4">
+    <v-container fluid class="pa-0 blue-grey lighten-5">
       <router-view />
     </v-container>
   </div>
@@ -58,13 +58,20 @@
 <script>
 export default {
   name: "DefaultLayout",
-   data: () => ({})
+  data: () => ({}),
+  methods: {
+    logout() {
+      this.$store.dispatch("setLoggedIn", "deslogado");
+      this.$router.push({ path: "/login" });
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
 .default {
   display: flex;
   .sidebar {
+    position: sticky;
     height: 100vh !important;
     ::v-deep .v-navigation-drawer__content {
       display: flex !important;
