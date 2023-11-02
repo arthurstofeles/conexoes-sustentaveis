@@ -10,7 +10,7 @@
       <img src="@/assets/logo-branca.png" alt="" />
 
       <v-list>
-        <v-list-item :to="{ path: '/admin' }" color="dark">
+        <v-list-item color="dark" :to="{ name: 'IdeiaListView' }" exact>
           <v-list-item-icon>
             <v-icon>mdi-lightbulb-on</v-icon>
           </v-list-item-icon>
@@ -19,7 +19,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item color="dark">
+        <v-list-item :to="{ name: 'CollaboratorListView' }" exact color="dark">
           <v-list-item-icon>
             <v-icon>mdi-account-group</v-icon>
           </v-list-item-icon>

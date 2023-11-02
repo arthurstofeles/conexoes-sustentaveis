@@ -15,3 +15,13 @@ export const ideia = async (id) => {
   const { data } = await apiInstance.get(ENDPOINTS.IDEIAS + id);
   return data;
 };
+
+export const collaborators = async () => {
+  const { data } = await apiInstance.get(ENDPOINTS.USUARIOS);
+  return data;
+};
+
+export const collaborator = async (id) => {
+  const { data } = await apiInstance.get(ENDPOINTS.USUARIOS + id);
+  return data;
+};

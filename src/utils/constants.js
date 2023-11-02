@@ -1,5 +1,5 @@
 export const ENDPOINTS = {
-    LOGIN: "login/",
-    IDEIAS: "ideias/"
-  };
-  
+  LOGIN: "login/",
+  IDEIAS: "ideias/",
+  USUARIOS: "collaborators/",
+};

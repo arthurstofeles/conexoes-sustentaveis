@@ -26,6 +26,18 @@ const routes = [
           name: 'IdeiaDetailView',
           component: () =>
             import(/* webpackChunkName: "IdeiaDetailView" */ "@/views/IdeiaDetailView.vue"),
+        },
+        {
+          path: "usuarios",
+          name: 'CollaboratorListView',
+          component: () =>
+            import(/* webpackChunkName: "CollaboratorListView" */ "@/views/CollaboratorListView.vue"),
+        },
+        {
+          path: "usuario/:id",
+          name: 'CollaboratorDetailView',
+          component: () =>
+            import(/* webpackChunkName: "CollaboratorDetailView" */ "@/views/CollaboratorDetailView.vue"),
         }
       ]
   },
