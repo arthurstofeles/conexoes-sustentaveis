@@ -27,6 +27,11 @@ export const collaborator = async (id) => {
 };
 
 export const statisticIdeia = async () => {
-  const { data } = await apiInstance.get(ENDPOINTS.ESTATISTICAS);
+  const { data } = await apiInstance.get(ENDPOINTS.ESTATISTICAS_IDEIA);
+  return data;
+};
+
+export const statisticDiagnostic = async () => {
+  const { data } = await apiInstance.get(ENDPOINTS.ESTATISTICAS_USUARIO);
   return data;
 };

@@ -45,6 +45,12 @@ const routes = [
           component: () =>
             import(/* webpackChunkName: "CollaboratorDetailView" */ "@/views/CollaboratorDetailView.vue"),
         },
+        {
+          path: "estatisticas-usuarios",
+          name: 'StatisticDiagnosticView',
+          component: () =>
+            import(/* webpackChunkName: "StatisticDiagnosticView" */ "@/views/StatisticDiagnosticView.vue"),
+        },
       ]
   },
   {

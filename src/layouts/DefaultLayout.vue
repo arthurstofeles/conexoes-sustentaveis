@@ -28,7 +28,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item color="dark">
+        <v-list-item color="dark" :to="{ name: 'StatisticDiagnosticView' }" exact>
           <v-list-item-icon>
             <v-icon>mdi-chart-bar</v-icon>
           </v-list-item-icon>
