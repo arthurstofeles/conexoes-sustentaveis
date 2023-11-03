@@ -37,7 +37,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item color="dark">
+        <v-list-item color="dark" :to="{ name: 'StatisticIdeiaView' }" exact>
           <v-list-item-icon>
             <v-icon>mdi-chart-areaspline-variant</v-icon>
           </v-list-item-icon>

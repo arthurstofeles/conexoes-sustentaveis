@@ -28,6 +28,12 @@ const routes = [
             import(/* webpackChunkName: "IdeiaDetailView" */ "@/views/IdeiaDetailView.vue"),
         },
         {
+          path: "estatisticas-ideias",
+          name: 'StatisticIdeiaView',
+          component: () =>
+            import(/* webpackChunkName: "StatisticIdeiaView" */ "@/views/StatisticIdeiaView.vue"),
+        },
+        {
           path: "usuarios",
           name: 'CollaboratorListView',
           component: () =>
@@ -38,7 +44,7 @@ const routes = [
           name: 'CollaboratorDetailView',
           component: () =>
             import(/* webpackChunkName: "CollaboratorDetailView" */ "@/views/CollaboratorDetailView.vue"),
-        }
+        },
       ]
   },
   {

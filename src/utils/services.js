@@ -25,3 +25,8 @@ export const collaborator = async (id) => {
   const { data } = await apiInstance.get(ENDPOINTS.USUARIOS + id);
   return data;
 };
+
+export const statisticIdeia = async () => {
+  const { data } = await apiInstance.get(ENDPOINTS.ESTATISTICAS);
+  return data;
+};
