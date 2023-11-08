@@ -5,8 +5,8 @@
       <h3>
         Veja aqui as novidades e ações da nossa comunidade sustentável.
       </h3>
-      <v-btn x-large rounded disabled class="black--text mt-6 px-10" dark color="#32C56D"
-        >Em breve</v-btn
+      <v-btn x-large rounded class="black--text mt-6 px-10" dark color="#32C56D" href="http://blog-conexoes-sustentaveis.finxilabs.com/" target="_blank"
+        >Acessar o blog</v-btn
       >
     </div>
     <img src="@/assets/blog-img.png" />

@@ -1,12 +1,24 @@
 <template>
   <div class="home">
-    <HeaderLayout  />
+    <HeaderLayout />
     <BannerHome id="inicio" />
     <FuncionaHome id="como-funciona" />
     <GapsHome id="gap" />
     <BlogHome id="blog" />
     <QuemSomosHome id="quem-somos" />
     <FooterHome />
+    <div class="d-flex justify-center">
+      <v-btn
+        x-small
+        rounded
+        class="black--text text-center mt-6"
+        to="/login"
+        outlined
+        dark
+        target="_blank"
+        >área restrita</v-btn
+      >
+    </div>
   </div>
 </template>
 
@@ -28,7 +40,7 @@ export default {
     BlogHome,
     QuemSomosHome,
     FooterHome,
-    GapsHome
+    GapsHome,
   },
 };
 </script>
@@ -36,7 +48,7 @@ export default {
 <style lang="scss" scoped>
 .home {
   scroll-behavior: smooth;
-  background-color: #E2EDE6;
+  background-color: #e2ede6;
   padding-bottom: 32px;
 }
 </style>

@@ -15,7 +15,7 @@
             <v-icon>mdi-lightbulb-on</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title>Lista de ideias</v-list-item-title>
+            <v-list-item-title>Ideias Sustentáveis</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -24,7 +24,7 @@
             <v-icon>mdi-account-group</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title>Lista de usuários</v-list-item-title>
+            <v-list-item-title>Autodiagnóstico de usuários</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 

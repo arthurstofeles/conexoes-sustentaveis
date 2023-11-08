@@ -1,8 +1,11 @@
 <template>
   <div class="footer">
-    Uma endotartup da
-    <img width="300" src="@/assets/olimpiada.png" alt="" />
-    <img width="300" src="@/assets/eletrobas.png" alt="" />
+    <div>
+      Uma endotartup da
+      <img width="300" src="@/assets/olimpiada.png" alt="" />
+      <img width="300" src="@/assets/eletrobas.png" alt="" />
+    </div>
+
   </div>
 </template>
 
@@ -21,12 +24,14 @@ export default {
   margin: 0 auto;
   margin-top: 64px;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 }
 </style>
